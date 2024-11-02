@@ -8,25 +8,25 @@ ___
 
 ###  **1. DETECCION DE MUTANTES**
 Implementación de una solución en Java con Spring Boot, organizada en una arquitectura de capas:
--Controladores: Se encarga de manejar las solicitudes HTTP.
--Servicios: Lógica de negocio para procesar y verificar secuencias de ADN.
--Repositorios: Gestión de persistencia de datos en una base de datos embebida.
+* Controladores: Se encarga de manejar las solicitudes HTTP.
+* Servicios: Lógica de negocio para procesar y verificar secuencias de ADN.
+* Repositorios: Gestión de persistencia de datos en una base de datos embebida.
 
 A continuacion se podra ver el diagrama de secuencia / arquitectura del sistema, entrar al siguiente URL: https://drive.google.com/drive/folders/15sTprkAUdRDkiiDbZxai2B_Sxgjr8AhL?usp=sharing
 ___
 ###  **2. API REST**
 
 Creación de una API REST con el servicio /mutant que verifica si una secuencia de ADN pertenece a un mutante.
-##### Formato de solicitud:
--Método: POST
--Endpoint: /mutant
-##### Respuesta:
+### Formato de solicitud:
+* Método: POST
+* Endpoint: /mutant
+### Respuesta:
 HTTP 200-OK si es mutante.
 HTTP 403-Forbidden si no es mutante.
 ___
 ###  **3. Persistencia y Estadísticas**
--Implementación de una base de datos embebida H2 para almacenar las secuencias de ADN verificadas (sin duplicados).
--Exposición del endpoint /stats que devuelve estadísticas sobre las secuencias analizadas en formato JSON:
+* Implementación de una base de datos embebida H2 para almacenar las secuencias de ADN verificadas (sin duplicados).
+* Exposición del endpoint /stats que devuelve estadísticas sobre las secuencias analizadas en formato JSON:
 ```json
 {
   "count_mutant_dna": 35,
@@ -34,8 +34,8 @@ ___
   "ratio": 0.35
 }
 ```
--Pruebas de carga utilizando JMeter para asegurar la capacidad de soportar grandes volúmenes de tráfico.
--Pruebas Integradas: Implementación de tests automáticos con JUnit, garantizando una cobertura de código superior al 80%.
+* Pruebas de carga utilizando JMeter para asegurar la capacidad de soportar grandes volúmenes de tráfico.
+* Pruebas Integradas: Implementación de tests automáticos con JUnit, garantizando una cobertura de código superior al 80%.
 ___   
 ## CÓMO PROBAR ENDPOINTS
 
@@ -179,11 +179,11 @@ ___
   }
 ___
 ## EJECUCION DE LOS TEST
-*Dentro del proyecto hay una carpeta test y dentro de la misma se encuentra "MutantServiceTest". La ejecutamos y en la consola nos mostrara los resultados.
+* Dentro del proyecto hay una carpeta test y dentro de la misma se encuentra "MutantServiceTest". La ejecutamos y en la consola nos mostrara los resultados.
 ___
 ## GUIA DE DESCARGA DEL PROYECTO
 
-*Para ejecutar el proyecto, primero descarga el archivo ZIP, luego extrae el contenido frl mismo ZIP. Asegúrate de tener Java y Gradle instalados en tu sistema. Configura las propiedades de la base de datos H2 en el archivo application.properties. Una vez configurado, compila y ejecuta el proyecto.La API estará disponible en http://localhost:8080 para que puedas probar los endpoints con herramientas como Postman.
+* Para ejecutar el proyecto, primero descarga el archivo ZIP, luego extrae el contenido frl mismo ZIP. Asegúrate de tener Java y Gradle instalados en tu sistema. Configura las propiedades de la base de datos H2 en el archivo application.properties. Una vez configurado, compila y ejecuta el proyecto.La API estará disponible en http://localhost:8080 para que puedas probar los endpoints con herramientas como Postman.
 
 
 ## * `TRABAJO REALIZADO POR FACUNDO BLANGETTI 3K10`
