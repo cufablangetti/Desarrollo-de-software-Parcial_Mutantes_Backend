@@ -21,8 +21,8 @@ Creación de una API REST con el servicio /mutant que verifica si una secuencia 
 * Método: POST
 * Endpoint: /mutant
 ### Respuesta:
-HTTP 200-OK si es mutante.
-HTTP 403-Forbidden si no es mutante.
+* HTTP 200-OK si es mutante.
+* HTTP 403-Forbidden si no es mutante.
 ___
 ###  **3. Persistencia y Estadísticas**
 * Implementación de una base de datos embebida H2 para almacenar las secuencias de ADN verificadas (sin duplicados).
@@ -183,7 +183,7 @@ ___
 ___
 ## GUIA DE DESCARGA DEL PROYECTO
 
-* Para ejecutar el proyecto, primero descarga el archivo ZIP, luego extrae el contenido frl mismo ZIP. Asegúrate de tener Java y Gradle instalados en tu sistema. Configura las propiedades de la base de datos H2 en el archivo application.properties. Una vez configurado, compila y ejecuta el proyecto.La API estará disponible en http://localhost:8080 para que puedas probar los endpoints con herramientas como Postman.
+* Para ejecutar el proyecto, primero descarga el archivo ZIP, luego extrae el contenido del mismo ZIP. Asegúrate de tener Java y Gradle instalados en tu sistema. Configura las propiedades de la base de datos H2 en el archivo application.properties. Una vez configurado, compila y ejecuta el proyecto.La API estará disponible en http://localhost:8080 para que puedas probar los endpoints con herramientas como Postman.
 
 
 ## * `TRABAJO REALIZADO POR FACUNDO BLANGETTI 3K10`
